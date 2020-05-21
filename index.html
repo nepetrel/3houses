@@ -3,7 +3,7 @@
   <title>3 Houses Pairing/Prompt Generator</title>
   <style>
         
-    @media and (max-width: 600px) {
+    @media (max-width: 600px) {
       .mainButton{
         font-size: 36px;
     background: #696969;
@@ -15,10 +15,15 @@
     padding-top: 5px;
     padding-bottom: 5px;
       }
+          
+      .result{
+        font-size: 50px;
+      }
     }
     
     
-    .mainButton{
+    @media and (min-width: 601px) {
+         .mainButton{
       font-size: 20px; 
       background: #696969; 
       color: #efefef;
@@ -31,14 +36,6 @@
     
       .result{
         font-size: 36px;
-      }
-    
-    @media and (max-width: 600px) {
-      .mainButton{
-        font-size: 28px;
-      }
-      .result{
-        font-size: 50px;
       }
     }
   </style>
