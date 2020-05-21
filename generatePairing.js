@@ -26,7 +26,7 @@ prompts3 = new Array("Oral fixation or fetishization (lips, tongue, or whole mou
  
  
  var randomPrompt = "";
- randomPrompt = prompts[Math.floor(Math.random()* prompts.length)];
+ randomPrompt = prompts1[Math.floor(Math.random()* prompts1.length)];
  
   document.getElementById("promptResult").innerHTML=randomPrompt;
  
