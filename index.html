@@ -2,6 +2,20 @@
 <head>
   <title>3 Houses Pairing/Prompt Generator</title>
   <style>
+        
+    @media and (max-width: 600px) {
+      .mainButton{
+        font-size: 36px;
+    background: #696969;
+    color: #efefef;
+    border-radius: 16px;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+      }
+      
     .mainButton{
       font-size: 20px; 
       background: #696969; 
@@ -13,18 +27,24 @@
       padding-bottom:5px;
     }
     
+      .result{
+        font-size: 36px;
+      }
     @media and (max-width: 600px) {
       .mainButton{
         font-size: 28px;
       }
+      .result{
+        font-size: 50px;
+      }
     }
   </style>
 </head>
-<body style="background:#0e0e0e;">
+<body style="background:#0e0e0e;color:#efefef;">
   <script src="generatePairing.js"></script> 
   <div class="button-casing"><center><button type="button" class="pairingButton mainButton" onclick="generatePairing()">Give me a pairing!</button><button type="button" class="promptButton mainButton" onclick="generatePrompt()">Give me a prompt!</button></center></div>
 
-    <div id="pairingResult"></div>
-    <div id = "promptResult"></div>
+    <div id="pairingResult" class="result"></div>
+    <div id = "promptResult" class="result"></div>
 </body>
 </html>
