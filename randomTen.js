@@ -10,9 +10,9 @@ var links = new Array("https://3houseskinkmeme.dreamwidth.org/476.html?thread=47
 var index = 0;
  for(var i = 0; i < 10; i++){
     index = Math.floor(Math.random()* titles.length);
-    document.getElementById("title"+index).innerHTML=titles[index];
-    document.getElementById("content"+index).innerHTML=contents[index];
-    document.getElementbyId("link"+index).innerHTML=links[index];
+    document.getElementById("title"+i).innerHTML=titles[index];
+    document.getElementById("content"+i).innerHTML=contents[index];
+    document.getElementbyId("link"+i).innerHTML=links[index];
  }
 }
 /*function uniq(a) {
