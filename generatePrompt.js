@@ -8,7 +8,7 @@ prompts1 = prompts1.concat(prompts3);
 prompts1 =  prompts1.concat(prompts2);
 
  var randomPrompt = "";
- randomPrompt = prompts[Math.floor(Math.random()* prompts.length)] + "\n";
+ randomPrompt = prompts1[Math.floor(Math.random()* prompts1.length)] + "\n";
  
   document.getElementById("promptResult").innerHTML=randomPrompt;
  
