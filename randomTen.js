@@ -12,7 +12,7 @@ var index = 0;
     index = Math.floor(Math.random()* titles.length);
     document.getElementById("title"+i).innerHTML=titles[index];
     document.getElementById("content"+i).innerHTML=contents[index];
-    document.getElementById("link"+i).innerHTML.href=links[index];
+    document.getElementById("link"+i).href=links[index];
  }
 }
 /*function uniq(a) {
