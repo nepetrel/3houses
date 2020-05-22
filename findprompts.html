@@ -47,13 +47,6 @@
   </style>
 </head>
 <body style="background:#0e0e0e;color:#efefef;">
-  <script type = "text/javascript">
-    document.getElementById('searchButton').onkeydown = function(e){
-   if(e.keyCode == 13){
-     getSearch();
-   }
-}
-  </script>
   <script src="getFirstTen.js"></script> 
   <script type = "text/javascript">
   function getSearch(){
@@ -96,6 +89,12 @@
     <div class="sub-casing">  <center><a id = "link9" href = "#"><div id="title9" class="result"></div></a></center>
       <center><div id = "content9" class="result"></div></center></div>
 
-
+  <script type = "text/javascript">
+    document.getElementById('searchButton').onkeydown = function(e){
+   if(e.keyCode == 13){
+     getSearch();
+   }
+}
+  </script>
 </body>
 </html>
