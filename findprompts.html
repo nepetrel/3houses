@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Search Prompts</title>
+  <style>
+        
+
+         .mainButton{
+    font-size: 24px;
+    background: #696969;
+    color: #efefef;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    width: 60%;
+    margin-right: 10px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    
+      .result{
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+    
+    .button-casing{
+          border: 2px solid #ccc;
+    border-radius: 16px;
+    }
+    .sub-casing{
+    border: 1px solid #6e6e6e;
+    border-radius: 16px;
+    margin: 6px 6px 6px 6px;
+    }
+    
+    a{
+      color: grey;
+    }
+  
+        @media (min-width: 800px){
+            .result{
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+    
+  </style>
+</head>
+<body style="background:#0e0e0e;color:#efefef;">
+  <script src="getFirstTen.js"></script> 
+  <script type = "text/javascript">
+  function getSearch(){
+    var nameValue = document.getElementById("searchText").value;
+    getFirstTen(namevalue);
+  }
+  </script>
+  <div class="button-casing">
+  <form name="searchForm" action="" method="POST">
+  <input type="text" name="searchText" id="searchText" value="Input Search Term Here" />
+  <input type="button" name="button" value="Search!" onClick="getSearch()">
+  </form>
+  
+      <center><div id = "content0" class="result"></div></center>
+    
+   <div class="sub-casing"> <center><a href = "#" id = "link1"><div id="title1" class="result"></div></a></center>
+     <center><div id = "content1" class="result"></div></center></div>
+    
+    <center><a id = "link2" href = "#"><div id="title2" class="result"></div></a></center>
+  <center><div id = "content2" class="result"></div></center>
+    
+  <div class="sub-casing">  <center><a id = "link3" href = "#"><div id="title3" class="result"></div></a></center>
+    <center><div id = "content3" class="result"></div></center></div>
+    
+    <center><a id = "link4" href = "#"><div id="title4" class="result"></div></a></center>
+  <center><div id = "content4" class="result"></div></center>
+    
+    <div class="sub-casing">  <center><a id = "link5" href = "#"><div id="title5" class="result"></div></a></center>
+      <center><div id = "content5" class="result"></div></center></div>
+    
+    <center><a id = "link6" href = "#"><div id="title6" class="result"></div></a></center>
+  <center><div id = "content6" class="result"></div></center>
+    
+  <div class="sub-casing">  <center><a id = "link7" href = "#"><div id="title7" class="result"></div></a></center>
+    <center><div id = "content7" class="result"></div></center></div>
+    
+    <center><a id = "link8" href = "#"><div id="title8" class="result"></div></a></center>
+  <center><div id = "content8" class="result"></div></center>
+    
+    <div class="sub-casing">  <center><a id = "link9" href = "#"><div id="title9" class="result"></div></a></center>
+      <center><div id = "content9" class="result"></div></center></div>
+
+
+</body>
+</html>
