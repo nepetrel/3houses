@@ -13,7 +13,7 @@ var combinedSearch;
         contentSearch = 0;
         combinedSearch = 0;
         titleSearch = titles.findIndex(element => element.includes(searchkey));
-        contentSearch = contents.find(element => element.includes(searchkey));
+        contentSearch = contents.findIndex(element => element.includes(searchkey));
         if(titleSearch == -1 && contentSearch == -1){
             break;
         }
