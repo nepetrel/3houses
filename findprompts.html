@@ -6,16 +6,24 @@
         
 
          .mainButton{
-    font-size: 24px;
+    font-size: 16px;
     background: #696969;
     color: #efefef;
     border-radius: 16px;
     margin-bottom: 30px;
-    width: 60%;
+    width: 50%;
     margin-right: 10px;
     height: auto;
+    margin-top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    }
+    
+    .searchText{
+     font-size: 20px;
+    border-radius: 16px;
+    padding-left: 10px;
+    background: #efefef;
     }
     
       .result{
@@ -88,13 +96,5 @@
     
     <div class="sub-casing">  <center><a id = "link9" href = "#"><div id="title9" class="result"></div></a></center>
       <center><div id = "content9" class="result"></div></center></div>
-
-  <script type = "text/javascript">
-    document.getElementById('searchText').onkeydown = function(e){
-   if(e.keyCode == 13){
-     getSearch();
-   }
-}
-  </script>
 </body>
 </html>
