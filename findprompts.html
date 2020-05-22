@@ -1,6 +1,7 @@
 <html>
 <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Search Prompts</title>
   <style>
         
@@ -96,5 +97,13 @@
     
     <div class="sub-casing">  <center><a id = "link9" href = "#"><div id="title9" class="result"></div></a></center>
       <center><div id = "content9" class="result"></div></center></div>
+    
+    <script>
+      $('#searchText').keypress(function(event){
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+	if(keycode == '13'){
+		getSearch();
+	}
+      });</script>
 </body>
 </html>
