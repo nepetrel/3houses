@@ -30,7 +30,20 @@ var combinedSearch;
     }
 }
 function caseInsensitiveSearch(element, searchkey){
-    var upperElement = element.toString().toUpperCase();
+    var lowerSearch = searchkey.toLowerCase();
     var upperSearch = searchkey.toUpperCase();
-    return upperElement.includes(upperSearch);
+    var titleSearch = searchkey.toTitleCase();
+    if(element.includes(searchkey) || element.includes(lowerSearch) || element.includes(upperSearch) || element.includes(titleSearch){
+       return true;
+       }
+    return false;
 }
+       
+           function toTitleCase(str) {
+        return str.replace(
+            /([^\W_]+[^\s-]*) */g,
+            function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            }
+        );
+    }
