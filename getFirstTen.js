@@ -8,19 +8,19 @@ searchkey =  searchkey.replace(/“/g, '&quot;').replace(/</g, '&lt;').replace(/
 var titleSearch;
 var contentSearch;
 var combinedSearch;
-    console.log("searchkey" + searchkey);
     for(var i = 0; i < 10; i++){
         titleSearch = 0;
         contentSearch = 0;
         combinedSearch = 0;
         titleSearch = titles.findIndex(element => element.includes(searchkey));
-        console.log("titlesearch: " + titleSearch);
         contentSearch = contents.find(element => element.includes(searchkey));
-        console.log("contentsearch: " + contentSearch);
         if(titleSearch == -1 && contentSearch == -1){
             break;
         }
         combinedSearch = Math.min(titleSearch, contentSearch);
+        if (combinedSearch < 0){
+            combinedSearch = Math.max(titleSearch, contentSearch);
+        }
         document.getElementById("title"+i).innerHTML=titles[combinedSearch];
         document.getElementById("content"+i).innerHTML=contents[combinedSearch];
         document.getElementById("link"+i).href=links[combinedSearch];
