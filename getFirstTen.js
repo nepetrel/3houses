@@ -21,9 +21,9 @@ var combinedSearch;
         if (combinedSearch < 0){
             combinedSearch = Math.max(titleSearch, contentSearch);
         }
-        document.getElementById("title"+i).innerHTML=titles[combinedSearch];
-        document.getElementById("content"+i).innerHTML=contents[combinedSearch];
-        document.getElementById("link"+i).href=links[combinedSearch];
+        document.getElementById("title"+i).innerHTML= searchkey; //titles[combinedSearch];
+        document.getElementById("content"+i).innerHTML=  titleSearch; //contents[combinedSearch];
+        document.getElementById("link"+i).href= contentSearch; //links[combinedSearch];
         var removed = titles.splice(0, combinedSearch+1);
         var removed = contents.splice(0, combinedSearch+1);
         var removed = links.splice(0, combinedSearch+1);
