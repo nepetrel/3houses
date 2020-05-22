@@ -30,7 +30,7 @@ var combinedSearch;
     }
 }
 function caseInsensitiveSearch(element, searchkey){
-    var upperElement = element.toUpperCase();
+    var upperElement = element.toString().toUpperCase();
     var upperSearch = searchkey.toUpperCase();
     return upperElement.includes(upperSearch);
 }
