@@ -12,8 +12,8 @@ var combinedSearch;
         titleSearch = 0;
         contentSearch = 0;
         combinedSearch = 0;
-        titleSearch = titles.findIndex(caseInsensitiveSearch(element =>  caseInsensitiveSearch(element, searchkey)));
-        contentSearch = contents.findIndex( caseInsensitiveSearch(element, searchkey));//element => element.includes(searchkey));
+        titleSearch = titles.findIndex(element => element.includes(searchkey));  //caseInsensitiveSearch(element =>  caseInsensitiveSearch(element, searchkey)));
+        contentSearch = contents.findIndex(element => element.includes(searchkey));
         if(titleSearch == -1 && contentSearch == -1){
             break;
         }
