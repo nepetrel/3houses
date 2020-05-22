@@ -56,8 +56,8 @@
   </script>
   <div class="button-casing">
   
-  <input type="text" name="searchText" id="searchText" placeholder="Input Search Term Here" />
-  <input type="button" name="button" id = "searchButton" value="Search!" onClick="getSearch()">
+<center>  <input type="text" name="searchText" id="searchText" placeholder="Input Search Term Here" />
+  <input type="button" name="button" class="mainButton" id = "searchButton" value="Search!" onClick="getSearch()"></center>
     
   <center><a href = "#" id = "link0"><div id="title0" class="result"></div></a></center>
       <center><div id = "content0" class="result"></div></center>
@@ -90,7 +90,7 @@
       <center><div id = "content9" class="result"></div></center></div>
 
   <script type = "text/javascript">
-    document.getElementById('searchButton').onkeydown = function(e){
+    document.getElementById('searchText').onkeydown = function(e){
    if(e.keyCode == 13){
      getSearch();
    }
