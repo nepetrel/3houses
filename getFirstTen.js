@@ -5,6 +5,11 @@ var links = new Array("https://3houseskinkmeme.dreamwidth.org/476.html?thread=47
 
 searchkey =  searchkey.replace(/“/g, '&quot;').replace(/</g, '&lt;').replace(/"/g, '&quot;').replace(/”/g, '&quot;');
 testvalue = searchkey;
+    for(var i = 0; i < 10; i++){
+         document.getElementById("title"+i).innerHTML= "";
+        document.getElementById("content"+i).innerHTML= "";
+        document.getElementById("link"+i).href= "";
+    }
     
 var titleSearch;
 var contentSearch;
