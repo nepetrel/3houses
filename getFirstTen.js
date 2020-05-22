@@ -13,8 +13,8 @@ var combinedSearch;
         titleSearch = 0;
         contentSearch = 0;
         combinedSearch = 0;
-        titleSearch = titles.findIndex(element =>  caseInsensitiveSearch(element), searchkey);  //caseInsensitiveSearch(element =>  caseInsensitiveSearch(element, searchkey)));
-        contentSearch = contents.findIndex(element => element.includes(searchkey));
+        titleSearch = titles.findIndex(element =>  caseInsensitiveSearch(element));  //caseInsensitiveSearch(element =>  caseInsensitiveSearch(element, searchkey)));
+        contentSearch = contents.findIndex(element =>  caseInsensitiveSearch(element));//(element => element.includes(searchkey));
         if(titleSearch == -1 && contentSearch == -1){
             break;
         }
@@ -31,11 +31,10 @@ var combinedSearch;
     }
 }
 function caseInsensitiveSearch(element){
-    alert(testvalue);
     var lowerSearch = testvalue.toLowerCase();
-    var upperSearch = searchkey.toUpperCase();
-    var titleSearch = searchkey.toTitleCase();
-    if(element.includes(searchkey) || element.includes(lowerSearch) || element.includes(upperSearch) || element.includes(titleSearch)){
+    var upperSearch = testvalue.toUpperCase();
+    var titleSearch = testvalue.toTitleCase();
+    if(element.includes(testvalue) || element.includes(lowerSearch) || element.includes(upperSearch) || element.includes(titleSearch)){
        return true;
        }
     return false;
