@@ -33,7 +33,7 @@ function caseInsensitiveSearch(element, searchkey){
     var lowerSearch = searchkey.toLowerCase();
     var upperSearch = searchkey.toUpperCase();
     var titleSearch = searchkey.toTitleCase();
-    if(element.includes(searchkey) || element.includes(lowerSearch) || element.includes(upperSearch) || element.includes(titleSearch){
+    if(element.includes(searchkey) || element.includes(lowerSearch) || element.includes(upperSearch) || element.includes(titleSearch)){
        return true;
        }
     return false;
